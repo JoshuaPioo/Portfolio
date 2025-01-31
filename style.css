@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #ffc107;
+    padding-left: 20px;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.header-icons .github-icon {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    text-align: left;
+    flex: 1;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffc107;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #ffc107;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #1e1e1e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .header nav {
+        flex-direction: column;
+    }
+
+    .header nav a {
+        padding: 20px;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .info {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
