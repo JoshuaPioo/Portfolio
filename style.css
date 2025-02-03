@@ -73,6 +73,34 @@ body {
     flex-direction: column;
 }
 
+.typing {
+    display: inline-block;
+    position: relative;
+}
+
+.typing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+    border-left: 2px solid #ffc107;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+    
+    }
+
 .profile-card {
     display: flex;
     justify-content: space-between;
@@ -91,8 +119,8 @@ body {
 }
 
 .profile-picture {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #ffc107;
@@ -127,7 +155,7 @@ p {
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show menu toggle button on smaller screens */
     }
 
     .nav-menu {
@@ -145,7 +173,7 @@ p {
     }
 
     .nav-menu.active {
-        left: 0;
+        left: 0; /* Show the menu when active */
     }
 
     .header nav {

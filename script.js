@@ -1,10 +1,3 @@
-var typing = new Typed(".typing", {
-    strings: ["Frontend", "Editor", "Designer"],
-    typeSpeed: 100,
-    backSpeed: 50,
-    loop: true
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
