@@ -7,11 +7,19 @@ const projects = [
     title: "MERN - Hotel Booking App",
     desc: "Full stack hotel booking app using React, MongoDB, Express, Node.js & Tailwind CSS.",
     icon: <Hotel className="w-10 h-10 text-blue-500" />,
+    videoSrc: "https://www.youtube.com/embed/GUufBK3qGuE",
+  },
+  {
+    title: "MERN - Chat Application",
+    desc: "Full stack hotel booking app using React, MongoDB, Express, Node.js & Tailwind CSS.",
+    icon: <Hotel className="w-10 h-10 text-blue-500" />,
+    videoSrc: "https://www.youtube.com/embed/GUufBK3qGuE",
   },
   {
     title: "Anthony Taberna (Katunying Restaurant)",
     desc: "Katunying Payroll is a system designed to simplify employee salary management, attendance tracking, and payment processing.",
     icon: <Utensils className="w-10 h-10 text-green-500" />,
+    videoSrc: "https://www.youtube.com/embed/UOM-5bilajk",
   },
   {
     title: "Instrument E-commerce Website",
@@ -27,6 +35,7 @@ const projects = [
     title: "Cafe Ordering App",
     desc: "Mobile app for cafe ordering system built with React.js.",
     icon: <Coffee className="w-10 h-10 text-yellow-500" />,
+    videoSrc: "https://www.youtube.com/embed/k9jTvjuAVZg",
   },
 ];
 
@@ -63,12 +72,19 @@ const Projects = () => {
             {/* Title */}
             <h3 className="text-lg md:text-xl font-bold mb-2 font-serif">{p.title}</h3>
 
-            {/* Video Preview (same for all projects) */}
-            <video
-              src="/videos/Taberna.mp4"
-              controls
-              className="w-full h-48 object-cover rounded-lg shadow mb-4"
-            />
+            {/* Video Preview for Cafe Ordering App */}
+            {p.videoSrc && (
+              <iframe
+                width="100%"
+                height="200"
+                src={p.videoSrc}
+                title={p.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-lg shadow mb-4"
+              />
+            )}
 
             {/* Description */}
             <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
