@@ -76,7 +76,7 @@ const Home = () => {
         <img
           src={profile}
           alt="Joshua Tablon"
-          className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full shadow-lg object-cover"
+          className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full shadow-lg object-cover mt-20 md:mt-0"
         />
       </motion.div>
     </section>

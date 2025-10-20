@@ -13,7 +13,7 @@ const Footer = () => {
     
         <div className="flex gap-5">
           <a
-            href="https://github.com/JoshuaPio"
+            href="https://github.com/JoshuaPioo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
