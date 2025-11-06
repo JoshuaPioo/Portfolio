@@ -13,7 +13,7 @@ const projects = [
     title: "MERN - Chat Application",
     desc: "Full stack hotel booking app using React, MongoDB, Express, Node.js & Tailwind CSS.",
     icon: <Hotel className="w-10 h-10 text-blue-500" />,
-    videoSrc: "https://www.youtube.com/embed/GUufBK3qGuE",
+    videoSrc: "https://www.youtube.com/embed/Xu7CuPsNiY4",
   },
   {
     title: "Anthony Taberna (Katunying Restaurant)",
@@ -25,11 +25,13 @@ const projects = [
     title: "Instrument E-commerce Website",
     desc: "Online store for musical instruments using Bootstrap, PHP, and API integration.",
     icon: <Music className="w-10 h-10 text-purple-500" />,
+    videoSrc: "https://www.youtube.com/embed/RO__kGxIMWo",
   },
   {
     title: "Clinic Appointment System",
     desc: "Pet clinic scheduler built with Oracle SQL Builder, SQL Reports, and VirtualBox.",
     icon: <Stethoscope className="w-10 h-10 text-red-500" />,
+    videoSrc: "https://www.youtube.com/embed/_yx68jdYMe0",
   },
   {
     title: "Cafe Ordering App",
