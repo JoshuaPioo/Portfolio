@@ -92,6 +92,11 @@ const About = () => {
               <p className="text-sm">Feb 2022 – May 2025</p>
               <p className="italic text-sm">Angkas Inc.</p>
             </div>
+            <div>
+              <p className="font-semibold">Project Technical Assistant III - Local Field Personnel</p>
+              <p className="text-sm">July 2025 – Oct 2025</p>
+              <p className="italic text-sm">University of Science and Technology of Southern Philippines.</p>
+            </div>
           </div>
         </motion.div>
 
@@ -112,10 +117,10 @@ const About = () => {
           </h3>
           <ul className="text-base font-sans text-gray-600 dark:text-gray-300 mt-3 space-y-1">
             <li>HTML / CSS</li>
-            <li>React.js</li>
+            <li>React.js / JavaScript</li>
+            <li>Tailwind CSS / Bootstrap</li>
           </ul>
         </motion.div>
-
         {/* Backend */}
         <motion.div
           custom={3}
@@ -132,7 +137,7 @@ const About = () => {
             Backend
           </h3>
           <ul className="text-base font-sans text-gray-600 dark:text-gray-300 mt-3 space-y-1">
-            <li>MongoDB / MySQL</li>
+            <li>MongoDB / SQL</li>
             <li>Express.js / Node.js</li>
             <li>Firebase / PHP</li>
           </ul>

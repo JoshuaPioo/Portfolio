@@ -11,9 +11,10 @@ const projects = [
   },
   {
     title: "MERN - Chat Application",
-    desc: "Full stack hotel booking app using React, MongoDB, Express, Node.js & Tailwind CSS.",
+    desc: "Real-time chat app using React, MongoDB, Express, Node.js & Socket.io.",
     icon: <Hotel className="w-10 h-10 text-blue-500" />,
     videoSrc: "https://www.youtube.com/embed/Xu7CuPsNiY4",
+    link: "https://chat-m6hs8.sevalla.app/login", // 🔗 Added clickable link
   },
   {
     title: "Anthony Taberna (Katunying Restaurant)",
@@ -71,10 +72,23 @@ const Projects = () => {
             {/* Icon */}
             <div className="mb-4">{p.icon}</div>
 
-            {/* Title */}
-            <h3 className="text-lg md:text-xl font-bold mb-2 font-serif">{p.title}</h3>
+            {/* Title — clickable if link exists */}
+            {p.link ? (
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg md:text-xl font-bold mb-2 font-serif text-blue-500 hover:underline"
+              >
+                {p.title}
+              </a>
+            ) : (
+              <h3 className="text-lg md:text-xl font-bold mb-2 font-serif">
+                {p.title}
+              </h3>
+            )}
 
-            {/* Video Preview for Cafe Ordering App */}
+            {/* Video Preview */}
             {p.videoSrc && (
               <iframe
                 width="100%"
