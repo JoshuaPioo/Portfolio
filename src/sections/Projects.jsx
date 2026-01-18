@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Hotel, Utensils, Music, Stethoscope, Coffee } from "lucide-react";
+import { Hotel, Utensils, Stethoscope, Coffee, Book } from "lucide-react";
 
 const projects = [
   {
@@ -17,16 +17,16 @@ const projects = [
     link: "https://chat-m6hs8.sevalla.app/login", // 🔗 Added clickable link
   },
   {
+    title: "Blogun",
+    desc: "A Facebook-Like Blog Built with Next.js, TypeScript, Postgre and Supabase.",
+    icon: <Book className="w-10 h-10 text-green-500" />,
+    link: "https://blogunto.vercel.app/",
+  },
+  {
     title: "Anthony Taberna (Katunying Restaurant)",
     desc: "Katunying Payroll is a system designed to simplify employee salary management, attendance tracking, and payment processing.",
     icon: <Utensils className="w-10 h-10 text-green-500" />,
     videoSrc: "https://www.youtube.com/embed/UOM-5bilajk",
-  },
-  {
-    title: "Instrument E-commerce Website",
-    desc: "Online store for musical instruments using Bootstrap, PHP, and API integration.",
-    icon: <Music className="w-10 h-10 text-purple-500" />,
-    videoSrc: "https://www.youtube.com/embed/RO__kGxIMWo",
   },
   {
     title: "Clinic Appointment System",
