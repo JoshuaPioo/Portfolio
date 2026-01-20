@@ -33,7 +33,11 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <Typewriter
-            words={["Web Developer", "Front End Developer", "Information Technology"]}
+            words={[
+              "Web Developer",
+              "Front End Developer",
+              "Information Technology",
+            ]}
             loop={true}
             cursor
             cursorStyle="|"
@@ -56,12 +60,12 @@ const Home = () => {
         </motion.p>
 
         <motion.a
-          href="#projects"
+          href="/Joshua-Tablon-Resume.pdf"
           className="mt-8 inline-block px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition text-sm sm:text-base"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          View My Work
+          Download my resume
         </motion.a>
       </div>
 
