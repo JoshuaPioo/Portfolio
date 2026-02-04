@@ -1,37 +1,67 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Card from "./Card";
 
-const Footer = () => {
-  return (
-    <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700 mt-20">
-      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-        <h3 className="text-lg font-serif font-bold text-gray-800 dark:text-gray-200">
-          © {new Date().getFullYear()} Joshua Tablon
-        </h3>
+const ButtonItem = ({ label, value, href }) => {
+  const base =
+    "block rounded-xl border border-black/20 dark:border-white/20 p-4 " +
+    "shadow-md dark:shadow-white/10 transition-all duration-200";
 
+  const interactive =
+    "hover:-translate-y-0.5 hover:shadow-lg dark:hover:shadow-white/20 " +
+    "active:translate-y-0 active:shadow-sm";
 
-    
-        <div className="flex gap-5">
-          <a
-            href="https://github.com/JoshuaPioo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
-          >
-            <FaGithub className="w-6 h-6" />
-          </a>
-          <a
-            href="https://linkedin.com/in/joshua-tablon-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
-          >
-            <FaLinkedin className="w-6 h-6" />
-          </a>
-        </div>
-      </div>
-    </footer>
+  return href ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={`${base} ${interactive}`}
+    >
+      <div className="font-semibold text-sm">{label}</div>
+      <div className="mt-1 text-sm opacity-80">{value}</div>
+    </a>
+  ) : (
+    <div className={base}>
+      <div className="font-semibold text-sm">{label}</div>
+      <div className="mt-1 text-sm opacity-80">{value}</div>
+    </div>
   );
 };
 
-export default Footer;
+export default function Footer() {
+  return (
+    <div id="contact" className="scroll-mt-24">
+      <Card>
+        <div className="text-lg font-bold text-center">Contact</div>
+
+        {/* CONTACT GRID */}
+        <div className="mt-5 grid md:grid-cols-2 gap-4">
+          {/* Email */}
+          <ButtonItem
+            label="Email"
+            value="Josh.rtablon@gmail.com"
+            href="mailto:Josh.rtablon@gmail.com"
+          />
+
+          {/* Links */}
+          <div className="space-y-3">
+            <ButtonItem
+              label="GitHub"
+              value="JoshuaPioo"
+              href="https://github.com/JoshuaPioo"
+            />
+            <ButtonItem
+              label="LinkedIn"
+              value="Joshua Tablon"
+              href="https://www.linkedin.com/in/joshua-tablon-profile/"
+            />
+          </div>
+        </div>
+
+        {/* FOOTNOTE */}
+        <div className="mt-6 text-center text-xs opacity-60">
+          © {new Date().getFullYear()} • Joshua Tablon • Web Developer
+        </div>
+      </Card>
+    </div>
+  );
+}

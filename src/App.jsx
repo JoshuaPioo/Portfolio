@@ -1,41 +1,36 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Navbar from "./Components/Navbar";
+import DarkModeToggle from "./Components/DarkModeToggle";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
-import Home from "./sections/Home";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
 
-
-const App = () => {
+export default function App() {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
+    localStorage.getItem("theme") === "dark",
   );
 
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white flex flex-col">
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+      <div className="max-w-4xl mx-auto px-8 md:px-12 lg:px-16 py-10 space-y-8">
+        {/* Top Bar */}
+        <div className="flex justify-between items-center">
+          <Navbar />
+          <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
 
-      <main className="flex-1 px-6">
         <Home />
         <About />
         <Projects />
-        <Contact />
-      </main>
-
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
-};
-
-export default App;
+}
