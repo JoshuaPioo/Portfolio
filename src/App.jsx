@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
+import WhatsAppWidget from "./Components/WhatsAppWidget";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(
@@ -30,6 +31,7 @@ export default function App() {
         <About />
         <Projects />
         <Footer />
+        <WhatsAppWidget />
       </div>
     </div>
   );

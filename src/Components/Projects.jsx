@@ -10,7 +10,7 @@ const projects = [
     title: "Chat Application",
     desc: "Real-time chat app with authentication and live messaging.",
     video: "https://www.youtube.com/embed/Xu7CuPsNiY4",
-    link: "https://chat-m6hs8.sevalla.app/login",
+    link: "https://https://chat-pio.vercel.app/",
   },
   {
     title: "Blogun",
