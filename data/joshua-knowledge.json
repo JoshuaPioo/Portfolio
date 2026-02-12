@@ -1,0 +1,27 @@
+[
+  {
+    "id": "about",
+    "title": "About Joshua",
+    "text": "Joshua is a fresh graduate IT focused on Frontend and React. Skills: HTML, CSS, JavaScript, React.js, basic Node/Express. Familiar with Supabase and MongoDB. He builds responsive websites and simple full-stack apps."
+  },
+  {
+    "id": "services",
+    "title": "Services Joshua can offer",
+    "text": "Services: build responsive websites (landing pages, portfolios), React UI development, admin dashboards, API integration, authentication (basic), CRUD apps, performance and UI improvements, bug fixing, deploy to Vercel."
+  },
+  {
+    "id": "project-1",
+    "title": "Project: Chat App",
+    "text": "Chat app using React UI with user list, messaging UI, and basic CRUD. Focus: clean UI, state management, and component structure."
+  },
+  {
+    "id": "faq-availability",
+    "title": "Availability",
+    "text": "Joshua is open for junior frontend roles and freelance small projects. Preferred: clear requirements, simple milestones, and regular updates."
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "text": "Contact Joshua via WhatsApp or email from the website contact section."
+  }
+]
