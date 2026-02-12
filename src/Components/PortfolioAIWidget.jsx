@@ -55,7 +55,6 @@ export default function PortfolioAIWidget() {
 
   return (
     <>
-      {/* Floating button (match first widget) */}
       <button
         onClick={() => setOpen(true)}
         className="fixed bottom-6 right-6 rounded-full px-5 py-3 shadow-lg
@@ -72,7 +71,6 @@ export default function PortfolioAIWidget() {
                      rounded-2xl border border-black/20 dark:border-white/20
                      bg-white dark:bg-black shadow-xl overflow-hidden"
         >
-          {/* Header (match first widget) */}
           <div className="p-4 flex items-center justify-between border-b border-black/10 dark:border-white/10">
             <div>
               <div className="font-semibold text-sm">Joshua Portfolio AI</div>
@@ -91,7 +89,6 @@ export default function PortfolioAIWidget() {
             </button>
           </div>
 
-          {/* Chat body (same height, same bubble styles) */}
           <div className="p-4 max-h-[320px] overflow-auto space-y-3">
             {messages.map((m, i) => (
               <div
@@ -115,7 +112,6 @@ export default function PortfolioAIWidget() {
             {loading && <div className="text-xs opacity-60">Typing…</div>}
           </div>
 
-          {/* Input area (match first widget) */}
           <div className="p-4 border-t border-black/10 dark:border-white/10">
             <div className="flex gap-2">
               <input
