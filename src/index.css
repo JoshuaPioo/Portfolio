@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@cvercel devstom-variant dark (&:where(.dark, .dark *));
 
 body {
     font-family: Arial, sans-serif;
