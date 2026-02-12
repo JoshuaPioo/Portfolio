@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import PortfolioAIWidget from "./Components/PortfolioAiWidget";
 
 
+
 export default function App() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark",
@@ -32,7 +33,7 @@ export default function App() {
         <About />
         <Projects />
         <Footer />
-        <PortfolioAIWidget/>
+        <PortfolioAIWidget />
       </div>
     </div>
   );
