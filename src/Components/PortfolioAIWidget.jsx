@@ -9,7 +9,7 @@ export default function PortfolioAIWidget() {
     {
       role: "assistant",
       content:
-        "Hi! 👋 I’m Joshua Portfolio AI. Ask me about Joshua or programming (React/JS).",
+        "Hi! 👋 I’m Joshua’s Portfolio AI assistant. You can ask me about Joshua’s skills, projects, services, or web development topics such as React and JavaScript.",
     },
   ]);
 

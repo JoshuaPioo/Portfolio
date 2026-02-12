@@ -2,26 +2,26 @@
   {
     "id": "about",
     "title": "About Joshua",
-    "text": "Joshua is a fresh graduate IT focused on Frontend and React. Skills: HTML, CSS, JavaScript, React.js, basic Node/Express. Familiar with Supabase and MongoDB. He builds responsive websites and simple full-stack apps."
+    "text": "Joshua is a Frontend Developer focused on building simple, modern, and responsive web applications. His core skills include HTML, CSS, JavaScript, and React.js, with working knowledge of Node.js, Express, Supabase, and MongoDB. He specializes in creating clean user interfaces, intuitive user experiences, and scalable web solutions."
   },
   {
     "id": "services",
-    "title": "Services Joshua can offer",
-    "text": "Services: build responsive websites (landing pages, portfolios), React UI development, admin dashboards, API integration, authentication (basic), CRUD apps, performance and UI improvements, bug fixing, deploy to Vercel."
+    "title": "Services Joshua Can Provide",
+    "text": "Joshua builds modern responsive websites, clean React user interfaces, admin dashboards, and simple full-stack applications. He works on API integrations, authentication features, CRUD systems, UI/UX improvements, debugging, performance optimization, and deployment to platforms such as Vercel. He also converts designs into functional web applications and improves existing systems."
   },
   {
     "id": "project-1",
-    "title": "Project: Chat App",
-    "text": "Chat app using React UI with user list, messaging UI, and basic CRUD. Focus: clean UI, state management, and component structure."
+    "title": "Project: Chat Application",
+    "text": "A modern messaging interface built with React featuring user lists, chat UI, component-based architecture, and efficient state management. The project demonstrates clean layout design, reusable components, and a scalable frontend structure."
   },
   {
     "id": "faq-availability",
     "title": "Availability",
-    "text": "Joshua is open for junior frontend roles and freelance small projects. Preferred: clear requirements, simple milestones, and regular updates."
+    "text": "Joshua is open to frontend developer roles and freelance projects focused on modern web applications. He works best with clear requirements, structured milestones, and regular communication."
   },
   {
     "id": "contact",
     "title": "Contact",
-    "text": "Contact Joshua via WhatsApp or email from the website contact section."
+    "text": "You can contact Joshua through the website contact form, email, or WhatsApp for project inquiries and collaboration opportunities."
   }
 ]
