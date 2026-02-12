@@ -6,8 +6,8 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
-import PortfolioAIWidget from "./Components/PortfolioAiWidget";
 
+import PortfolioAIWidget from "./Components/PortfolioAIWidget";
 
 
 
@@ -34,7 +34,7 @@ export default function App() {
         <About />
         <Projects />
         <Footer />
-        <PortfolioAIWidget/>
+        <PortfolioAIWidget />
       </div>
     </div>
   );
